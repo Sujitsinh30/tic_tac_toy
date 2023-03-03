@@ -20,7 +20,7 @@
         <table cellpadding="10">
             <tr>
                 <td>
-                    <input type="text" id="c1" readonly>
+                    <input type="text" id="c1" readonly onclick="disp_X()">
                 </td>
                 <td>
                     <input type="text" id="c2" readonly>
@@ -60,7 +60,7 @@
                 <h3><i class="fa-solid fa-user"></i>PLAYER 2 O</h3>
             </p>
             <p class="reset mt-5 d-flex justify-content-center">
-                <button type="reset">
+                <button type="reset" id="reset">
                     <img src="./reload.png" alt="restart-img" style="max-width: 20px;">RESET
                 </button>
             </p>
