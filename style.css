@@ -1,0 +1,23 @@
+nav
+{
+    height: 10vw;
+}
+nav h2
+{
+    font-size: xxx-large;
+}
+table td input
+{
+    border-radius: 8rem;
+    height: 8rem;
+    width: 8rem;
+    background-color: aqua;
+    color:crimson;
+}
+button
+{
+    border: 1px solid gold ;
+    background-color: white;
+    color: gold;
+}
+
