@@ -10,63 +10,61 @@
     <title>Tic_Tac_Toy</title>
 </head>
 <body> 
-    <link rel="stylesheet" href="./script.js">
     <header>
-        <nav class="d-flex justify-content-center align-items-center">
-            <h2 class="text-danger">Tic-Tac-Toe</h2>
+        <nav style="height: 7vw;">
+            <h2 class="text-danger" style="text-align: center;">Tic-Tac-Toe</h2>
         </nav>
+        <nav><h1 class="text-center" id="win_msg" style="color: blueviolet;"></h1></nav>
+        <nav class="d-flex justify-content-center" style="height: 5vw;">
+            <button type="reset" id="reset" onclick="window.location.reload()">
+                <img src="./reload.png" alt="restart-img" style="max-width: 20px;">RESET
+            </button>
+        </nav>
+        <div class="row" id="player_nm">
+            <h3 class="col-md-2"></h3>
+            <h3 class="col-md-5"><i class="fa-solid fa-user"></i>PLAYER 1:X</span></h3>
+            <h3 class="col-md-5"><i class="fa-solid fa-user"></i>PLAYER 2:O</span></h3>
+        </div>
     </header>
-    <div class="container d-flex justify-content-around flex-row" id="toy_bord">
-        <table cellpadding="10">
+    <div class="container" id="toe_bord">
+        <center>
+        <table>
             <tr>
                 <td>
-                    <input type="text" id="c1" readonly onclick="disp_X()">
+                    <input type="text" id="c1" onclick="Disp(this)" readonly>
                 </td>
                 <td>
-                    <input type="text" id="c2" readonly>
+                    <input type="text" id="c2" onclick="Disp(this)" readonly>
                 </td>
                 <td>
-                    <input type="text" id="c3" readonly>
+                    <input type="text" id="c3" onclick="Disp(this)" readonly>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="text" id="c4" readonly>
+                    <input type="text" id="c4" onclick="Disp(this)" readonly >
                 </td>
                 <td>
-                    <input type="text" id="c5" readonly>
+                    <input type="text" id="c5" onclick="Disp(this)" readonly>
                 </td>
                 <td>
-                    <input type="text" id="c6" readonly>
+                    <input type="text" id="c6" onclick="Disp(this)" readonly>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <input type="text" id="c7" readonly>
+                    <input type="text" id="c7" onclick="Disp(this)" readonly>
                 </td>
                 <td>
-                    <input type="text" id="c8" readonly>
+                    <input type="text" id="c8" onclick="Disp(this)" readonly>
                 </td>
                 <td>
-                    <input type="text" id="c9" readonly>
+                    <input type="text" id="c9" onclick="Disp(this)" readonly>
                 </td>
             </tr>
         </table>
-        <div class="d-flex flex-column" id="player_nm">
-            <p>
-                <h3><i class="fa-solid fa-user"></i>PLAYER 1 X</h3>
-            </p>
-            <p>
-                <h3><i class="fa-solid fa-user"></i>PLAYER 2 O</h3>
-            </p>
-            <p class="reset mt-5 d-flex justify-content-center">
-                <button type="reset" id="reset">
-                    <img src="./reload.png" alt="restart-img" style="max-width: 20px;">RESET
-                </button>
-            </p>
-        </div>
+    </center>    
     </div>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
